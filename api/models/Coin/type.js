@@ -12,7 +12,7 @@ module.exports = new GraphQLObjectType({
   name: 'Coin',
   description: 'A cryptocurrency to be traded',
   fields: () => {
-    const { Coin } = require('../');
+    const { Coin } = require('../index');
     const Wallet = require('../Wallet/type');
     return {
       id: {

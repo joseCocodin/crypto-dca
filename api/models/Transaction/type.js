@@ -13,7 +13,7 @@ module.exports = new GraphQLObjectType({
   name: 'Transaction',
   description: 'A transaction of cryptocurrency',
   fields: () => {
-    const { Transaction } = require('../');
+    const { Transaction } = require('../index');
     const Wallet = require('../Wallet/type');
     const Coin = require('../Coin/type');
     return {

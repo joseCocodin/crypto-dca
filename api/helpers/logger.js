@@ -10,24 +10,24 @@ switch (NODE_ENV) {
   case 'test':
     level = 'verbose';
     transports = [
-      new winston.transports.File({
-        filename: 'combined.log',
-        level: 'error'
-      }),
+      // new winston.transports.File({
+      //   filename: 'combined.log',
+      //   level: 'error'
+      // }),
       // new winston.transports.Console()
     ]; //No logging in test
     break;
   case 'production':
     level = 'verbose';
     transports = [
-      new winston.transports.File({
-        filename: 'error.log',
-        level: 'error'
-      }),
-      new winston.transports.File({
-        filename: 'combined.log',
-        level: 'verbose'
-      })
+      // new winston.transports.File({
+      //   filename: 'error.log',
+      //   level: 'error'
+      // }),
+      // new winston.transports.File({
+      //   filename: 'combined.log',
+      //   level: 'verbose'
+      // })
     ]
     break;
 }

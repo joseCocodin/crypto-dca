@@ -8,7 +8,7 @@ module.exports = new GraphQLObjectType({
   name: 'User',
   description: 'A user',
   fields: () => {
-    const db = require('../');
+    const db = require('../index');
     return {
       id: {
         type: new GraphQLNonNull(GraphQLString),
